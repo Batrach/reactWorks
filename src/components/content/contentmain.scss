@@ -1,0 +1,111 @@
+.wrapper{
+    max-width: 1280px;
+    margin: auto;
+    
+    .block{
+        max-width: 717px;
+        
+        .title{     
+        font-weight: 400;
+        font-size: 72px;
+        color: #fff;;
+        letter-spacing: -3px;
+        margin-bottom: 20px;
+        span{
+            font-weight: 700;
+        }
+        }
+        .text{
+            font-size: 23px;
+            color: #fff;
+            max-width: 499px;
+            color: #CECECE;
+            margin-bottom: 67px;
+        }
+      
+           
+             .btn{
+            display: block;
+            width: 331px;
+            height: 66px;
+            background: linear-gradient(92.84deg, #1DD844 1.44%, #CBF62E 126.29%);
+            box-shadow: 0px 0px 8px 2px rgb(29, 215, 70);
+            border: none;
+            text-align: center;
+            line-height: 26px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #242424;
+            font-weight: 600 !important;
+            cursor: pointer;
+            &:disabled{
+                color: #24242480;
+            }
+            
+        
+        }
+       
+    }
+}
+@media (max-width:760px) {
+    .wrapper{
+        max-width: 1280px;
+        width: 100%;
+        margin: auto;
+        height: 100vh;
+        padding-bottom: 50px;
+        .block{
+            margin: auto;
+            max-width: 95%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            .title{
+                display: block;     
+            font-weight: 400;
+            font-size: 25px;
+            text-align: center;
+            color: #fff;;
+            letter-spacing: 0;
+            margin-bottom: 20px;
+            span{
+                font-weight: 700;
+            }
+            }
+            .text{
+                display: block;
+                text-align: center;
+                font-size: 23px;
+                color: #fff;
+                max-width: 499px;
+                color: #CECECE;
+                margin-top: auto;
+                // margin-bottom: 67px;
+            }
+          
+               
+                 .btn{
+                display: block;
+                margin: 0 auto;
+                width: calc(100% - 40px);
+                height: 51px;
+                background: linear-gradient(92.84deg, #1DD844 1.44%, #CBF62E 126.29%);
+                
+                text-align: center;
+                line-height: 26px;
+                border-radius: 20px;
+                text-decoration: none;
+                color: #242424;
+                font-weight: 600 !important;
+                cursor: pointer;
+                &:disabled{
+                    color: #24242480;
+                }
+                
+            
+            }
+           
+        }
+    }
+    
+}

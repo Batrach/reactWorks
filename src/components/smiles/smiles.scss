@@ -1,0 +1,156 @@
+.smiles {
+    width: 100vw;
+
+    background: linear-gradient(212.69deg, #323E51 4.9%, #1D2532 55.16%);
+
+    .backgroundimages {
+        padding: 130px 0;
+        background-image: url('../../img/smiles/top.png'), url('../../img/smiles/topright.png'), url('../../img/smiles/leftright.png'), url('../../img/smiles/leftbottom.png'), url('../../img/smiles/rigthbottom.png'), ;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position: right 25% top -5%, left 21% top 11%, right 20% top -0.16px, right 21% bottom 11%, left 21% bottom 11%;
+        background-size: 150px, 84px, 550px, 131.66px, 550px;
+    }
+
+    &__wrapper {
+        max-width: 1280px;
+        margin: auto;
+        height: 100%;
+
+        .title {
+            width: fit-content;
+            margin: 0 auto;
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 58px;
+            color: #fff;
+            margin-bottom: 65px;
+        }
+
+        .row {
+            max-width: 650px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+
+            .block {
+                width: 300px;
+
+                &__content {
+                    background-color: #333E51B2;
+                    display: flex;
+                    height: 310px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 23px;
+                    border-radius: 20px;
+                    padding-top: 45px;
+                    // padding-bottom: 0;
+
+                    .image {
+                        // margin-top: 45px;
+                        // width: fit-content;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .info {
+                        font-size: 19px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        letter-spacing: -0.69px;
+                        text-align: center;
+                        color: #fff;
+                        // margin-bottom: auto;
+                    }
+                }
+
+                .bottom {
+                    height: 20px;
+                    width: 260px;
+                    margin: 0 auto;
+                    background-color: #333E5199;
+                    border-radius: 0 0 20px 20px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:760px) {
+    .smiles {
+        .backgroundimages {
+            padding: 40px 0 102px;
+            background-image: url('../../img/smiles/top.png'), url('../../img/smiles/topright.png'), url('../../img/smiles/leftright.png'), url('../../img/smiles/leftbottom.png'), url('../../img/smiles/rigthbottom.png'), ;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+            background-position: right -68px top -5%, left 21% top 11%, right 20% top -0.16px, right 10px bottom 10px, left 21% bottom 11%;
+            background-size: 137px, 21.91px, 550px, 100px, 550px;
+        }
+
+        &__wrapper {
+            .title {
+                max-width: 180px;
+                text-align: center;
+                font-size: 23px;
+                font-weight: 600;
+                line-height: 30px;
+                margin-bottom: 30px;
+            }
+
+            .row {
+                // display: block;
+                margin: auto;
+                max-width: 100%;
+                flex-direction: column;
+                width: 100%;
+                gap: 35px;
+                .block {
+                    margin: auto;
+                    width: 260px;
+                    height: 290px;
+                    &__content {
+                        padding-top: 69px;
+                        display: block;
+                        height: calc(273px - 69px);
+                        gap: 20px;
+                        .image {
+                            
+                            margin: 0 auto;
+                            margin-bottom: 20px;
+                            img{
+                                width: 83px;
+                                height: 83px;
+                            }
+                        }
+                       
+                        .info {
+                            display: block;
+                            margin: 0 auto;
+                            max-width: 214px;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .bottom {
+                        height: 17px;
+                        width: 235px;
+                    }
+                }
+            }
+            .row :nth-child(1){
+                .block {
+                    &__content {
+                        padding-top: 48px;
+                        display: block;
+                        height: calc(273px - 48px);
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
